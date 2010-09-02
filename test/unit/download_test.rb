@@ -88,4 +88,5 @@ class DownloadTest < ActiveSupport::TestCase
     assert_equal [[@version_3, 3], [@version_2, 1], [@version_1, 1]],
                  Download.most_downloaded_today
   end
+
 end

@@ -23,7 +23,7 @@
           <div id="nav">
             <% if signed_in? %>
                 <div id="user-info">
-                  <a href="<%= edit_profile_path %>">
+                  <a href="<%= profile_path(current_user) %>">
                     <%= image_tag(current_user.gravatar_url(:size => 32), :id => "user_gravatar") %>
                     <span><%= truncate(current_user.name) %></span>
                   </a>
